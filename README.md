@@ -4,7 +4,10 @@ An association fix for tixati not appearing as a selectable default app, Magnet 
 If you want to use this you need to change paths if your install location differs from mine. 
 I would suggest you open the .reg file in a text editor that shows the respective number of lines and edit these specified lines: 14, 22, 29, 40, 48, 63. replace my tixati's .exe location with yours and you are set. 
 
-it should then look like this in windows: <img width="1357" height="516" alt="image" src="https://github.com/user-attachments/assets/142cf1de-899e-4999-8f15-a241b138af07" />
+it should then look like this in windows: 
+
+<img width="384" height="425" alt="image" src="https://github.com/user-attachments/assets/1c3e8ab5-6318-4c1b-bfa4-8cfaf708087a" />
+
 
 
 if you want to use other programs like uTorrent, BitTorrent, etc. you need to change the names and labels as well.
