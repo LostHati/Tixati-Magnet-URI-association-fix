@@ -1,0 +1,62 @@
+Windows Registry Editor Version 5.00
+; fix magnet url and torrent files association in windows
+[HKEY_CURRENT_USER\SOFTWARE]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.magnet]
+@="URL:magnet"
+"Content Type"="application/x-magnet"
+"URL Protocol"=""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.magnet\DefaultIcon]
+@="\"C:\\Program Files\\tixati\\tixati.exe\",0"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.magnet\shell]
+@="open"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.magnet\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.magnet\shell\open\command]
+@="\"C:\\Program Files\\tixati\\tixati.exe\" \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.torrent]
+"Content Type"="application/x-bittorrent"
+@="Torrent file"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.torrent\DefaultIcon]
+@="\"C:\\Program Files\\tixati\\tixati.exe\",1"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.torrent\shell]
+@="open"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.torrent\shell]
+@="open"
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.torrent\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Tixati.torrent\shell\open\command]
+@="\"C:\\Program Files\\tixati\\tixati.exe\" \"%1\""
+
+[HKEY_CURRENT_USER\SOFTWARE\RegisteredApplications]
+"Tixati"="Software\\Tixati\\Capabilities"
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati]
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati\Capabilities]
+"ApplicationIcon"="C:\\Program Files\\tixati\\tixati.exe,1"
+"ApplicationName"="Tixati"
+"ApplicationDescription"="Tixati downloader"
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati\Capabilities\URLAssociations]
+"magnet"="Tixati.magnet"
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati\Capabilities\FileAssociations]
+".torrent"="Tixati.torrent"
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati\shell]
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati\shell\open]
+
+[HKEY_CURRENT_USER\SOFTWARE\Tixati\shell\open\command]
+@="\"C:\\Program Files\\tixati\\tixati.exe\""
